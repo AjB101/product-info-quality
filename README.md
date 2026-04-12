@@ -151,6 +151,8 @@ This project demonstrates:
 ### Lovable AI Dashboard
 ![Lovable Dashboard](lovable_dashboard.png) 
 
+This dashboard was generated using Lovable AI to visualize product information quality, highlighting incomplete product data and categorizing items by completeness.
+
 ---
 
 ##  Submission Notes
