@@ -148,7 +148,8 @@ This project demonstrates:
 
 ##  Dashboard Preview
 
-(Optional: Add a screenshot of your Streamlit or Lovable dashboard here)
+### Lovable AI Dashboard
+![Lovable Dashboard](lovable_dashboard.png) 
 
 ---
 
