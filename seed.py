@@ -39,10 +39,15 @@ def seed_electronics(session: Session, count: int) -> None:
             "battery_life_hours": battery_life,
         }
 
+        barcode = fake.ean(length=13)
+        price=fake.pricetag()
+
         product = Product(
             name=name,
             category="electronics",
             description=description,
+            barcode = barcode,
+            price=price
         )
 
         product.set_attributes(attributes)
@@ -65,6 +70,9 @@ def seed_grocery(session: Session, count: int) -> None:
             ["", " Gluten-free.", " High in fiber.", " Gluten-free and high in fiber."]
         )
 
+        barcode = fake.ean(length=13)
+        price = fake.pricetag()
+
         description = (base_description + " " + extra_detail).strip()
 
         is_gluten_free = "Gluten-free" in extra_detail
@@ -79,6 +87,8 @@ def seed_grocery(session: Session, count: int) -> None:
             name=name,
             category="grocery",
             description=description,
+            barcode = barcode,
+            price=price
         )
 
         product.set_attributes(attributes)
